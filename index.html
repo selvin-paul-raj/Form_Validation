@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <form onsubmit="return validate()" method="get">
+      <h1>Login Here</h1>
+
+      <label for="name">User Name :</label>
+      <input type="text" placeholder=" Name" id="name" name="name" />
+      <span id="name-error" class="error"></span>
+
+      <label for="email">Email Id :</label>
+      <input type="email" placeholder="Email " id="email" name="email" />
+      <span id="email-error" class="error"></span>
+
+      <label for="password">Password : </label>
+      <input
+        type="password"
+        placeholder="Password"
+        id="password"
+        name="password"
+      />
+      <span id="password-error" class="error"></span>
+
+      <button value="submit" type="submit">Log In</button>
+    </form>
+
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>
